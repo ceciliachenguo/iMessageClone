@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+import StreamChat
+import StreamChatSwiftUI
+
 @main
 struct iMessageCloneApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatChannelListView(viewFactory: iMessageViewFactory())
         }
     }
 }
