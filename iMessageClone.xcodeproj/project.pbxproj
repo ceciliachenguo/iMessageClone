@@ -22,6 +22,8 @@
 		8DDB15B92A950F4B00B25482 /* LeadingSwipeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */; };
 		8DDB15BB2A950FB500B25482 /* TrailingSwipeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */; };
 		8DDB15BD2A95110100B25482 /* iMessageChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */; };
+		8DDB15C02A9514DD00B25482 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 8DDB15BF2A9514DD00B25482 /* OrderedCollections */; };
+		8DDB15C22A9516CD00B25482 /* PinnedChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15C12A9516CD00B25482 /* PinnedChannelsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingSwipeAreaView.swift; sourceTree = "<group>"; };
 		8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingSwipeAreaView.swift; sourceTree = "<group>"; };
 		8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListViewModel.swift; sourceTree = "<group>"; };
+		8DDB15C12A9516CD00B25482 /* PinnedChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedChannelsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DDB15C02A9514DD00B25482 /* OrderedCollections in Frameworks */,
 				8DDB15A52A9269CA00B25482 /* StreamChatSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +91,7 @@
 				8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */,
 				8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */,
 				8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */,
+				8DDB15C12A9516CD00B25482 /* PinnedChannelsView.swift */,
 			);
 			path = iMessageClone;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			name = iMessageClone;
 			packageProductDependencies = (
 				8DDB15A42A9269CA00B25482 /* StreamChatSwiftUI */,
+				8DDB15BF2A9514DD00B25482 /* OrderedCollections */,
 			);
 			productName = iMessageClone;
 			productReference = 8DDB15922A92684400B25482 /* iMessageClone.app */;
@@ -148,6 +154,7 @@
 			mainGroup = 8DDB15892A92684400B25482;
 			packageReferences = (
 				8DDB15A32A9269CA00B25482 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+				8DDB15BE2A9514DD00B25482 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 8DDB15932A92684400B25482 /* Products */;
 			projectDirPath = "";
@@ -176,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DDB15C22A9516CD00B25482 /* PinnedChannelsView.swift in Sources */,
 				8DDB15B92A950F4B00B25482 /* LeadingSwipeAreaView.swift in Sources */,
 				8DDB15A72A926AB600B25482 /* AppDelegate.swift in Sources */,
 				8DDB15BB2A950FB500B25482 /* TrailingSwipeAreaView.swift in Sources */,
@@ -406,6 +414,14 @@
 				minimumVersion = 4.35.1;
 			};
 		};
+		8DDB15BE2A9514DD00B25482 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +429,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8DDB15A32A9269CA00B25482 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
 			productName = StreamChatSwiftUI;
+		};
+		8DDB15BF2A9514DD00B25482 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DDB15BE2A9514DD00B25482 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
