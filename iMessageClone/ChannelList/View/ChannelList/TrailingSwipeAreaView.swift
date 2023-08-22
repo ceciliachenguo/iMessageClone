@@ -21,19 +21,17 @@ struct TrailingSwipeAreaView: View {
         HStack(spacing: 0) {
             Spacer()
             
-            ActionItemButton(imageName: "bell.fill") {
+            SwipeItemCustomButton(imageName: "MutedIcon") {
                 leftButtonTapped(channel)
             }
             .frame(width: buttonWidth)
-            .foregroundColor(.white)
-            .background(Color.indigo)
+            .background(Color.clear)
             
-            ActionItemButton(imageName: "trash.fill") {
+            SwipeItemCustomButton(imageName: "TrashedIcon") {
                 rightButtonTapped(channel)
             }
             .frame(width: buttonWidth)
-            .foregroundColor(.white)
-            .background(Color.red)
+            .background(Color.clear)
         }
     }
 }

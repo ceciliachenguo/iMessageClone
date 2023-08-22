@@ -47,14 +47,9 @@ struct iMessageChannelListItemView: View {
                     
                     Spacer()
                     
-                    HStack(spacing: 10) {
-                        Text(lastMessageStamp)
-                            .foregroundColor(.secondary)
-                        
-                        Image(systemName: "chevron.right")
-                            .foregroundColor(.secondary)
-                    }
-                    .font(.subheadline)
+                    Text(lastMessageStamp)
+                        .foregroundColor(.secondary)
+                        .font(.subheadline)
                 }
                 
                 HStack(alignment: .top, spacing: 4) {
@@ -66,11 +61,11 @@ struct iMessageChannelListItemView: View {
                         .frame(maxWidth: .infinity, minHeight: 40, alignment: .topLeading)
                     
                     if isMuted {
-                        Image(systemName: "bell.slash.fill")
+                        Image(systemName: "speaker.slash")
                             .resizable()
                             .scaledToFit()
                             .foregroundColor(.secondary)
-                            .frame(width: 12)
+                            .frame(width: 15)
                             .padding(.top, 4)
                     }
                 }

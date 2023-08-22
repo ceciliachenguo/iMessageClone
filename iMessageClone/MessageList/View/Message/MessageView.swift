@@ -19,7 +19,7 @@ struct MessageView: View {
             .padding(.horizontal)
             .padding(.vertical, 8)
             .background(
-                isCurrentUser ? .blue : Color(uiColor: .secondarySystemBackground),
+                isCurrentUser ? Color("pinkAccentColor") : Color(uiColor: .secondarySystemBackground),
                 in: RoundedRectangle(cornerRadius: 20, style: .continuous)
             )
             .background(alignment: isCurrentUser ? .bottomTrailing : .bottomLeading) {
@@ -27,7 +27,7 @@ struct MessageView: View {
                 ?
                 Image(isCurrentUser ? "outgoingTail" : "incomingTail")
                     .renderingMode(.template)
-                    .foregroundStyle(isCurrentUser ? .blue : Color(uiColor: .secondarySystemBackground))
+                    .foregroundStyle(isCurrentUser ? Color("pinkAccentColor") : Color(uiColor: .secondarySystemBackground))
                 : nil
             }
     }

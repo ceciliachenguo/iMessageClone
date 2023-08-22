@@ -54,9 +54,6 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("Messages")
-                .toolbar {
-                    iMessageChannelListHeader()
-            }
             }
         }
     }

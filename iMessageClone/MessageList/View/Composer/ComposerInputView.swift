@@ -49,7 +49,7 @@ struct ComposerInputView: View {
                 }
             }
         }
-        .padding(4)
+        .padding(8)
         .overlay(Capsule()
             .stroke(.tertiary, lineWidth: 1)
             .opacity(0.7)

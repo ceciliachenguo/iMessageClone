@@ -13,8 +13,6 @@
 		8DDB15A52A9269CA00B25482 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8DDB15A42A9269CA00B25482 /* StreamChatSwiftUI */; };
 		8DDB15A72A926AB600B25482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15A62A926AB600B25482 /* AppDelegate.swift */; };
 		8DDB15AD2A92721600B25482 /* iMessageViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15AC2A92721600B25482 /* iMessageViewFactory.swift */; };
-		8DDB15AF2A9272F600B25482 /* iMessageChannelListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */; };
-		8DDB15B12A95037E00B25482 /* iMessageChannelListHeaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */; };
 		8DDB15B32A9507B000B25482 /* iMessageChannelListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B22A9507B000B25482 /* iMessageChannelListItemView.swift */; };
 		8DDB15B52A95089800B25482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDB15B42A95089800B25482 /* Preview Assets.xcassets */; };
 		8DDB15B72A950CF900B25482 /* iMessageChannelListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B62A950CF900B25482 /* iMessageChannelListItem.swift */; };
@@ -42,8 +40,6 @@
 		8DDB15992A92684600B25482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DDB15A62A926AB600B25482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DDB15AC2A92721600B25482 /* iMessageViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageViewFactory.swift; sourceTree = "<group>"; };
-		8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListHeader.swift; sourceTree = "<group>"; };
-		8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListHeaderModifier.swift; sourceTree = "<group>"; };
 		8DDB15B22A9507B000B25482 /* iMessageChannelListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListItemView.swift; sourceTree = "<group>"; };
 		8DDB15B42A95089800B25482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "../Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DDB15B62A950CF900B25482 /* iMessageChannelListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListItem.swift; sourceTree = "<group>"; };
@@ -140,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				8DDB15C92A95196400B25482 /* ChannelList */,
-				8DDB15C82A95195C00B25482 /* ChannelHeader */,
 				8DDB15CA2A95196C00B25482 /* ChannelListItem */,
 			);
 			path = View;
@@ -152,15 +147,6 @@
 				8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8DDB15C82A95195C00B25482 /* ChannelHeader */ = {
-			isa = PBXGroup;
-			children = (
-				8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */,
-				8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */,
-			);
-			path = ChannelHeader;
 			sourceTree = "<group>";
 		};
 		8DDB15C92A95196400B25482 /* ChannelList */ = {
@@ -342,8 +328,6 @@
 				8DDB15DB2A951BE100B25482 /* LinkView.swift in Sources */,
 				8DDB15BD2A95110100B25482 /* iMessageChannelListViewModel.swift in Sources */,
 				8DDB15962A92684400B25482 /* iMessageCloneApp.swift in Sources */,
-				8DDB15AF2A9272F600B25482 /* iMessageChannelListHeader.swift in Sources */,
-				8DDB15B12A95037E00B25482 /* iMessageChannelListHeaderModifier.swift in Sources */,
 				8DDB15E52A951C5900B25482 /* MessageListHeaderModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,9 +10,6 @@ import StreamChatSwiftUI
 import StreamChat
 
 extension iMessageViewFactory {
-    func makeChannelListHeaderViewModifier(title: String) -> iMessageChannelListHeaderModifier {
-        iMessageChannelListHeaderModifier(title: "Messages")
-    }
     
     func makeChannelListItem(
         channel: ChatChannel,

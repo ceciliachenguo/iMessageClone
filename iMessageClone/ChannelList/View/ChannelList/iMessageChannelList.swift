@@ -54,10 +54,6 @@ struct iMessageChannelList: View {
                             return Alert.defaultErrorAlert
                         }
                     }
-                    .navigationTitle("Messages")
-                    .toolbar {
-                        iMessageChannelListHeader()
-                    }
             }
         }
     }
