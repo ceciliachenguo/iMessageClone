@@ -31,7 +31,7 @@ struct ComposerInputView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30, height: 30)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color("pinkAccentColor"))
                         .font(.body.weight(.semibold))
                 }
             } else {

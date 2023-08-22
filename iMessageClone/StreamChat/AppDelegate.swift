@@ -20,12 +20,23 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         let client = ChatClient(config: config)
         return client
     }()
-
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions:
                         [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        var colors = ColorPalette()
+        colors.tintColor = Color("pinkAccentColor")
+        
+        var fonts = Fonts()
+        
+        let images = Images()
+        images.reactionLoveBig = UIImage(systemName: "heart.fill")!
+
+        let appearance = Appearance(colors: colors, images: images, fonts: fonts)
+        
         // The `StreamChat` instance we need to assign
-        streamChat = StreamChat(chatClient: chatClient)
+        streamChat = StreamChat(chatClient: chatClient, appearance: appearance)
 
         // Calling the `connectUser` functions
         connectUser()

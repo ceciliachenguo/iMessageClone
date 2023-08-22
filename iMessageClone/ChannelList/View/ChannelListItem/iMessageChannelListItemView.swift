@@ -27,7 +27,7 @@ struct iMessageChannelListItemView: View {
             ZStack {
                 if hasUnreadMessages {
                     Circle()
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color("pinkAccentColor"))
                 }
             }
             .frame(width: 12)

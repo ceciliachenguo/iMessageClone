@@ -56,7 +56,7 @@ struct ContentView: View {
                 .navigationBarTitle("Messages", displayMode: .inline)
             }
         }
-        .accentColor(.blue)
+        .accentColor(Color("pinkAccentColor"))
     }
 }
 

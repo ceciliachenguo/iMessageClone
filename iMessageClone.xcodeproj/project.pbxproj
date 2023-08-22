@@ -58,6 +58,7 @@
 		8DDB15E22A951C4700B25482 /* MessageListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListHeader.swift; sourceTree = "<group>"; };
 		8DDB15E42A951C5900B25482 /* MessageListHeaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListHeaderModifier.swift; sourceTree = "<group>"; };
 		8DDB15E62A95345F00B25482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DDB15E92A955C6D00B25482 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 		8DDB15942A92684400B25482 /* iMessageClone */ = {
 			isa = PBXGroup;
 			children = (
+				8DDB15E82A955C4C00B25482 /* Font */,
 				8DDB15E62A95345F00B25482 /* Info.plist */,
 				8DDB15952A92684400B25482 /* iMessageCloneApp.swift */,
 				8DDB15C32A9518FB00B25482 /* StreamChat */,
@@ -229,6 +231,14 @@
 				8DDB15E42A951C5900B25482 /* MessageListHeaderModifier.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		8DDB15E82A955C4C00B25482 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8DDB15E92A955C6D00B25482 /* Montserrat-VariableFont_wght.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
