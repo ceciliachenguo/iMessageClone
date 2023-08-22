@@ -15,6 +15,13 @@
 		8DDB15A72A926AB600B25482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15A62A926AB600B25482 /* AppDelegate.swift */; };
 		8DDB15AD2A92721600B25482 /* iMessageViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15AC2A92721600B25482 /* iMessageViewFactory.swift */; };
 		8DDB15AF2A9272F600B25482 /* iMessageChannelListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */; };
+		8DDB15B12A95037E00B25482 /* iMessageChannelListHeaderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */; };
+		8DDB15B32A9507B000B25482 /* iMessageChannelListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B22A9507B000B25482 /* iMessageChannelListItemView.swift */; };
+		8DDB15B52A95089800B25482 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDB15B42A95089800B25482 /* Preview Assets.xcassets */; };
+		8DDB15B72A950CF900B25482 /* iMessageChannelListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B62A950CF900B25482 /* iMessageChannelListItem.swift */; };
+		8DDB15B92A950F4B00B25482 /* LeadingSwipeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */; };
+		8DDB15BB2A950FB500B25482 /* TrailingSwipeAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */; };
+		8DDB15BD2A95110100B25482 /* iMessageChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		8DDB15A62A926AB600B25482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DDB15AC2A92721600B25482 /* iMessageViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageViewFactory.swift; sourceTree = "<group>"; };
 		8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListHeader.swift; sourceTree = "<group>"; };
+		8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListHeaderModifier.swift; sourceTree = "<group>"; };
+		8DDB15B22A9507B000B25482 /* iMessageChannelListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListItemView.swift; sourceTree = "<group>"; };
+		8DDB15B42A95089800B25482 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DDB15B62A950CF900B25482 /* iMessageChannelListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListItem.swift; sourceTree = "<group>"; };
+		8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingSwipeAreaView.swift; sourceTree = "<group>"; };
+		8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingSwipeAreaView.swift; sourceTree = "<group>"; };
+		8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageChannelListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,13 @@
 				8DDB15992A92684600B25482 /* Assets.xcassets */,
 				8DDB159B2A92684600B25482 /* Preview Content */,
 				8DDB15AE2A9272F600B25482 /* iMessageChannelListHeader.swift */,
+				8DDB15B02A95037E00B25482 /* iMessageChannelListHeaderModifier.swift */,
+				8DDB15B42A95089800B25482 /* Preview Assets.xcassets */,
+				8DDB15B22A9507B000B25482 /* iMessageChannelListItemView.swift */,
+				8DDB15B62A950CF900B25482 /* iMessageChannelListItem.swift */,
+				8DDB15B82A950F4B00B25482 /* LeadingSwipeAreaView.swift */,
+				8DDB15BA2A950FB500B25482 /* TrailingSwipeAreaView.swift */,
+				8DDB15BC2A95110100B25482 /* iMessageChannelListViewModel.swift */,
 			);
 			path = iMessageClone;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDB159D2A92684600B25482 /* Preview Assets.xcassets in Resources */,
+				8DDB15B52A95089800B25482 /* Preview Assets.xcassets in Resources */,
 				8DDB159A2A92684600B25482 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,11 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DDB15B92A950F4B00B25482 /* LeadingSwipeAreaView.swift in Sources */,
 				8DDB15A72A926AB600B25482 /* AppDelegate.swift in Sources */,
+				8DDB15BB2A950FB500B25482 /* TrailingSwipeAreaView.swift in Sources */,
 				8DDB15AD2A92721600B25482 /* iMessageViewFactory.swift in Sources */,
+				8DDB15B72A950CF900B25482 /* iMessageChannelListItem.swift in Sources */,
 				8DDB15982A92684400B25482 /* ContentView.swift in Sources */,
+				8DDB15B32A9507B000B25482 /* iMessageChannelListItemView.swift in Sources */,
+				8DDB15BD2A95110100B25482 /* iMessageChannelListViewModel.swift in Sources */,
 				8DDB15962A92684400B25482 /* iMessageCloneApp.swift in Sources */,
 				8DDB15AF2A9272F600B25482 /* iMessageChannelListHeader.swift in Sources */,
+				8DDB15B12A95037E00B25482 /* iMessageChannelListHeaderModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

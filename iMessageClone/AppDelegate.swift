@@ -36,7 +36,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     // The `connectUser` function we need to add.
     private func connectUser() {
         // This is a hardcoded token valid on Stream's tutorial environment.
-        let token = try! Token(rawValue: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoibHVrZV9za3l3YWxrZXIifQ.kFSLHRB5X62t0Zlc7nwczWUfsQMwfkpylC6jCUZ6Mc0")
+        let tokenString = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoibHVrZV9za3l3YWxrZXIifQ.kFSLHRB5X62t0Zlc7nwczWUfsQMwfkpylC6jCUZ6Mc0"
+        guard let token = try? Token(rawValue: tokenString) else {
+            log.error("Invalid token.")
+            return
+        }
 
         // Call `connectUser` on our SDK to get started.
         chatClient.connectUser(
