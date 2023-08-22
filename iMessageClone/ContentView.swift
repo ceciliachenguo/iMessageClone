@@ -53,9 +53,10 @@ struct ContentView: View {
                         return Alert.defaultErrorAlert
                     }
                 }
-                .navigationTitle("Messages")
+                .navigationBarTitle("Messages", displayMode: .inline)
             }
         }
+        .accentColor(.blue)
     }
 }
 

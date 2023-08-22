@@ -44,13 +44,5 @@ struct MessageListHeader: ToolbarContent {
                 .padding(.bottom, 6)
             }
         }
-        
-        ToolbarItem(placement: .navigationBarTrailing) {
-            Button {
-                isVideoSheetShown = true
-            } label: {
-                Image(systemName: "video")
-            }
-        }
     }
 }
