@@ -1,18 +1,15 @@
 //
-//  iMessageViewFactory.swift
+//  iMessageViewFactory+ChannelList.swift
 //  iMessageClone
 //
-//  Created by Cecilia Chen on 8/20/23.
+//  Created by Cecilia Chen on 8/22/23.
 //
 
-import Foundation
+import SwiftUI
 import StreamChatSwiftUI
 import StreamChat
-import SwiftUI
 
-class iMessageViewFactory:ViewFactory {
-    @Injected(\.chatClient) var chatClient: ChatClient
-    
+extension iMessageViewFactory {
     func makeChannelListHeaderViewModifier(title: String) -> iMessageChannelListHeaderModifier {
         iMessageChannelListHeaderModifier(title: "Messages")
     }
@@ -36,9 +33,11 @@ class iMessageViewFactory:ViewFactory {
             channelName: channelName,
             avatar: avatar,
             channelDestination: channelDestination,
-            selectedChannel: selectedChannel,
-            onItemTap: onItemTap
-        )
+            selectedChannel: selectedChannel
+        ) { chatChannel in
+            self.channelId = chatChannel.cid
+            onItemTap(chatChannel)
+        }
         
         return ChatChannelSwipeableListItem<iMessageViewFactory, iMessageChannelListItem>(
             factory: self,
